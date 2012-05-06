@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30E3C9A15561E0500D21EBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C30E3C9915561E0500D21EBF /* main.cpp */; };
+		C30E3C9C15561E0500D21EBF /* Spell_Check.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30E3C9B15561E0500D21EBF /* Spell_Check.1 */; };
+		C30E3CA715561E3B00D21EBF /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = C30E3CA415561E3B00D21EBF /* sqlite3.c */; };
+		C3BF07C61556205A002DEDC2 /* word_database.sqlite3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3BF07C315562038002DEDC2 /* word_database.sqlite3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C30E3C9315561E0500D21EBF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C30E3C9C15561E0500D21EBF /* Spell_Check.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C3BF07C515562050002DEDC2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				C3BF07C61556205A002DEDC2 /* word_database.sqlite3 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C30E3C9515561E0500D21EBF /* Spell Check */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Spell Check"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30E3C9915561E0500D21EBF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C30E3C9B15561E0500D21EBF /* Spell_Check.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Spell_Check.1; sourceTree = "<group>"; };
+		C30E3CA415561E3B00D21EBF /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		C30E3CA515561E3B00D21EBF /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		C30E3CA615561E3B00D21EBF /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		C3BF07C315562038002DEDC2 /* word_database.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = word_database.sqlite3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30E3C9215561E0500D21EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30E3C8A15561E0500D21EBF = {
+			isa = PBXGroup;
+			children = (
+				C3BF07C315562038002DEDC2 /* word_database.sqlite3 */,
+				C30E3CA215561E1F00D21EBF /* Library */,
+				C30E3C9815561E0500D21EBF /* Spell Check */,
+				C30E3C9615561E0500D21EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30E3C9615561E0500D21EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30E3C9515561E0500D21EBF /* Spell Check */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30E3C9815561E0500D21EBF /* Spell Check */ = {
+			isa = PBXGroup;
+			children = (
+				C30E3C9915561E0500D21EBF /* main.cpp */,
+				C30E3C9B15561E0500D21EBF /* Spell_Check.1 */,
+			);
+			path = "Spell Check";
+			sourceTree = "<group>";
+		};
+		C30E3CA215561E1F00D21EBF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C30E3CA315561E3300D21EBF /* SQL */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C30E3CA315561E3300D21EBF /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				C30E3CA415561E3B00D21EBF /* sqlite3.c */,
+				C30E3CA515561E3B00D21EBF /* sqlite3.h */,
+				C30E3CA615561E3B00D21EBF /* sqlite3ext.h */,
+			);
+			name = SQL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30E3C9415561E0500D21EBF /* Spell Check */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30E3C9F15561E0500D21EBF /* Build configuration list for PBXNativeTarget "Spell Check" */;
+			buildPhases = (
+				C30E3C9115561E0500D21EBF /* Sources */,
+				C30E3C9215561E0500D21EBF /* Frameworks */,
+				C30E3C9315561E0500D21EBF /* CopyFiles */,
+				C3BF07C515562050002DEDC2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spell Check";
+			productName = "Spell Check";
+			productReference = C30E3C9515561E0500D21EBF /* Spell Check */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30E3C8C15561E0500D21EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C30E3C8F15561E0500D21EBF /* Build configuration list for PBXProject "Spell Check" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C30E3C8A15561E0500D21EBF;
+			productRefGroup = C30E3C9615561E0500D21EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30E3C9415561E0500D21EBF /* Spell Check */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30E3C9115561E0500D21EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E3C9A15561E0500D21EBF /* main.cpp in Sources */,
+				C30E3CA715561E3B00D21EBF /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C30E3C9D15561E0500D21EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C30E3C9E15561E0500D21EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C30E3CA015561E0500D21EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C30E3CA115561E0500D21EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30E3C8F15561E0500D21EBF /* Build configuration list for PBXProject "Spell Check" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30E3C9D15561E0500D21EBF /* Debug */,
+				C30E3C9E15561E0500D21EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30E3C9F15561E0500D21EBF /* Build configuration list for PBXNativeTarget "Spell Check" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30E3CA015561E0500D21EBF /* Debug */,
+				C30E3CA115561E0500D21EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30E3C8C15561E0500D21EBF /* Project object */;
+}
